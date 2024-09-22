@@ -1,0 +1,35 @@
+[
+  {
+    "role": "Graduate Services Assistant",
+    "organisation": "Arizona State University",
+    "startDate": "Aug, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "1", 
+      "1"
+    ], 
+    "imageSrc": ""
+  },
+  {
+    "role": "SAP Consultant",
+    "organisation": "LTIMindtree",
+    "startDate": "Jun, 2021",
+    "endDate": "Jul, 2023",
+    "experiences": [
+      "2", 
+      "2"
+    ],
+    "imageSrc": ""
+  },
+  {
+    "role": "Software Development Engineer Intern",
+    "organisation": "VESIT Renaissance Cell",
+    "startDate": "Nov, 2019",
+    "endDate": "Jan, 2020",
+    "experiences": [
+      "3",
+      "3"
+    ],
+    "imageSrc": ""
+  }
+]
