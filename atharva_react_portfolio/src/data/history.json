@@ -8,7 +8,7 @@
       "1", 
       "1"
     ], 
-    "imageSrc": ""
+    "imageSrc": "history/ASU.png"
   },
   {
     "role": "SAP Consultant",
@@ -19,7 +19,7 @@
       "2", 
       "2"
     ],
-    "imageSrc": ""
+    "imageSrc": "history/ltimindtree.png"
   },
   {
     "role": "Software Development Engineer Intern",
@@ -30,6 +30,6 @@
       "3",
       "3"
     ],
-    "imageSrc": ""
+    "imageSrc": "history/VES.png"
   }
 ]
