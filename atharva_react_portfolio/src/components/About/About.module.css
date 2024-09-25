@@ -17,16 +17,7 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.aboutImage {
-  width: 35%;
+  padding-bottom: 20px;
 }
 
 .aboutItems {
@@ -72,15 +63,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
+    
   .aboutItems {
     margin-top: 29px;
   }
