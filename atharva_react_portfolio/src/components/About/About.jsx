@@ -8,50 +8,40 @@ export const About = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
-      {/* <div className={StyleSheet.content}> */}
-        {/* <img 
-          src={getImageUrl("about/aboutImage.png")} 
-          alt="Me siting with a laptop"
-          className={styles.aboutImage}
-        /> */}
-      {/* </div> */}
       <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
-          <img 
-            src={getImageUrl("about/cursorIcon.png")} 
-            alt="Cursor Icon" 
-          />
           <div className={styles.aboutItemText}>
             <h3>Frontend Developer</h3>
             <p>
-              I'm a frontend developer with experience in building
-              responsive and optimised sites
+              I specialize in crafting visually appealing and highly optimized user interfaces, 
+              ensuring a seamless user experience
             </p>
           </div>
         </li>
         <li className={styles.aboutItem}>
-          <img 
-            src={getImageUrl("about/serverIcon.png")} 
-            alt="Server Icon" 
-          />
           <div className={styles.aboutItemText}>
             <h3>Backend Developer</h3>
             <p>
-              I have experience developing fast and optimised 
-              back-end systems and APIs
+              I focus on designing high-performance backend APIs, 
+              ensuring fast data processing and seamless integration with frontend systems
             </p>
           </div>
         </li>
         <li className={styles.aboutItem}>
-          <img 
-            src={getImageUrl("about/uiIcon.png")} 
-            alt="UI Icon" 
-          />
           <div className={styles.aboutItemText}>
-            <h3>UI Designer</h3>
+            <h3>Full Stack Developer</h3>
             <p>
-              I have designed multiple landing pages and 
-              have systems as well
+              I develop end-to-end solutions, managing both frontend and backend technologies 
+              to deliver complete and optimized applications            
+            </p>
+          </div>
+        </li>
+        <li className={styles.aboutItem}>
+          <div className={styles.aboutItemText}>
+            <h3>DevOps Engineer</h3>
+            <p>
+              I ensure continuous delivery and automation of development pipelines, 
+              optimizing infrastructure for seamless deployment
             </p>
           </div>
         </li>
