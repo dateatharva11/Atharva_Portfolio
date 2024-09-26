@@ -1,35 +1,30 @@
 [
   {
-    "title": "Project A",
+    "title": "Agile/LEAN Metrics Calculator",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "A software to calculate Agile metrics with functionalities like metric selection, computation and visualization",
+    "skills": ["React", "SpringBoot", "Scrum", "Kanban"],
+    "source": "https://github.com/kkartik12/SER516-Team-Denver"
   },
   {
-    "title": "Project B",
+    "title": "BlockWheels - A Peer to Peer Ridesharing Network",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "A smartphone application for ride-sharing services using Blockchain Technology",
+    "skills": ["React Native", "Node", "MongoDB", "Ethereum"],
+    "source": "https://github.com/dateatharva11/BlockWheels"
   },
   {
-    "title": "Project C",
+    "title": "Chatify",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "A real-time chat application with multiple rooms for users to engage in private conversations",
+    "skills": ["React", "Express", "MongoDB", "SocketIO"],
+    "source": "https://github.com/dateatharva11/Chatify-app"
   },
   {
-    "title": "Project D",
+    "title": "NAAV Programming Language",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "MongoDB"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "A language called NAAV with interpreter made of tokenizer, parser and evaluator",
+    "skills": ["SWI Prolog", "Python", "PySwip", "GitHub"],
+    "source": "https://github.com/atharva-date/SER502-NAAV-Team17"
   }
-
 ]
