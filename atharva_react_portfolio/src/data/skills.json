@@ -8,8 +8,16 @@
     "imageSrc": "skills/css.png"
   },
   {
+    "title": "JavaScript",
+    "imageSrc": "skills/js.png"
+  },
+  {
     "title": "React",
     "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Vue",
+    "imageSrc": "skills/vue.png"
   },
   {
     "title": "Node",
@@ -24,7 +32,19 @@
     "imageSrc": "skills/mongodb.png"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "MySQL",
+    "imageSrc": "skills/mysql.png"
+  },
+  {
+    "title": "SpringBoot",
+    "imageSrc": "skills/springboot.png"
+  },
+  {
+    "title": "SAP",
+    "imageSrc": "skills/sap.png"
+  },
+  {
+    "title": "Docker",
+    "imageSrc": "skills/docker.png"
   }
 ]
