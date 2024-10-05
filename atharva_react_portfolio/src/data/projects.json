@@ -1,28 +1,28 @@
 [
   {
     "title": "Agile/LEAN Metrics Calculator",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/agile_project.jpg",
     "description": "A software to calculate Agile metrics with functionalities like metric selection, computation and visualization",
     "skills": ["React", "SpringBoot", "Scrum", "Kanban"],
     "source": "https://github.com/kkartik12/SER516-Team-Denver"
   },
   {
     "title": "BlockWheels - A Peer to Peer Ridesharing Network",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/blockchain_project.jpg",
     "description": "A smartphone application for ride-sharing services using Blockchain Technology",
     "skills": ["React Native", "Node", "MongoDB", "Ethereum"],
     "source": "https://github.com/dateatharva11/BlockWheels"
   },
   {
     "title": "Chatify",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/chat_project.jpg",
     "description": "A real-time chat application with multiple rooms for users to engage in private conversations",
     "skills": ["React", "Express", "MongoDB", "SocketIO"],
     "source": "https://github.com/dateatharva11/Chatify-app"
   },
   {
     "title": "NAAV Programming Language",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/naav_project.jpg",
     "description": "A language called NAAV with interpreter made of tokenizer, parser and evaluator",
     "skills": ["SWI Prolog", "Python", "PySwip", "GitHub"],
     "source": "https://github.com/atharva-date/SER502-NAAV-Team17"
