@@ -7,13 +7,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 98.5vw;
+  width: 100vw;
   padding: 58px 10%;
-  gap: 10px;
+  gap: 100px;
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 4px;
 }
@@ -41,7 +41,7 @@
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
@@ -58,7 +58,4 @@
     align-items: center;
   }
 
-  .links {
-    align-items: center;
-  }
 }
