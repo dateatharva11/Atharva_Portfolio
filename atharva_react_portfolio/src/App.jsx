@@ -5,6 +5,8 @@ import { About } from './components/About/About';
 import { Experience } from './components/Experience/Experience';
 import { Projects } from './components/Projects/Projects'; 
 import { Contact } from './components/Contact/Contact'; 
+import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'; 
+
 
 function App() {
 
@@ -16,8 +18,9 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
+      <ScrollToTop />
     </div>
   )
 }
 
-export default App
+export default App;
