@@ -32,13 +32,13 @@
     "imageSrc": "projects/ipl_insights.jpg",
     "description": "A semantic ontology framework integrating IPL cricket data for performance analysis with efficient querying",
     "skills": ["Flask", "React", "OWL", "SPARQL"],
-    "source": ""
+    "source": "https://github.com/mdeshp11/SER531-Group-7-Data-Integration-Project"
   },
   {
     "title": "Forbidden Vaults: Single-Player Puzzle Game",
     "imageSrc": "projects/forbidden_vaults.jpg",
     "description": "A Unity-based puzzle game featuring procedurally generated dungeons, intricate buff-debuff systems, and dynamic gameplay mechanics",
     "skills": ["Unity", "C#"],
-    "source": ""
+    "source": "https://github.com/Kushagra1480/SER594_ForbiddenVaults"
   }
 ]
