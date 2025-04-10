@@ -1,5 +1,19 @@
 [
   {
+    "title": "BlockWheels: A Peer to Peer Ridesharing Network",
+    "imageSrc": "projects/blockchain_project.jpg",
+    "description": "A smartphone application for ride-sharing services using Blockchain Technology",
+    "skills": ["React Native", "NodeJS", "MongoDB", "Ethereum"],
+    "source": "https://github.com/dateatharva11/BlockWheels"
+  },
+  {
+    "title": "Revvo: Mall Store Finder",
+    "imageSrc": "projects/revvo_project.png",
+    "description": "Revvo is your smart shopping friend, transforming the way you navigate malls",
+    "skills": ["React Native", "Appwrite", "Google Cloud", "Tailwind CSS"],
+    "source": "https://github.com/Parth-Thombre/revvo"
+  },
+  {
     "title": "Agile/LEAN Metrics Calculator",
     "imageSrc": "projects/agile_project.jpg",
     "description": "A software to calculate Agile metrics with functionalities like metric selection, computation and visualization",
@@ -7,37 +21,23 @@
     "source": "https://github.com/kkartik12/SER516-Team-Denver"
   },
   {
-    "title": "BlockWheels - A Peer to Peer Ridesharing Network",
-    "imageSrc": "projects/blockchain_project.jpg",
-    "description": "A smartphone application for ride-sharing services using Blockchain Technology",
-    "skills": ["React Native", "Node", "MongoDB", "Ethereum"],
-    "source": "https://github.com/dateatharva11/BlockWheels"
-  },
-  {
     "title": "Chatify",
     "imageSrc": "projects/chat_project.jpg",
-    "description": "A real-time chat application with multiple rooms for users to engage in private conversations",
-    "skills": ["React", "Express", "MongoDB", "SocketIO"],
+    "description": "A real-time chat application with multiple rooms and private chat feature for users to engage in private conversations",
+    "skills": ["React", "Express", "MongoDB", "Expo"],
     "source": "https://github.com/dateatharva11/Chatify-app"
-  },
-  {
-    "title": "NAAV Programming Language",
-    "imageSrc": "projects/naav_project.jpg",
-    "description": "A language called NAAV with interpreter made of tokenizer, parser and evaluator",
-    "skills": ["SWI Prolog", "Python", "PySwip", "GitHub"],
-    "source": "https://github.com/atharva-date/SER502-NAAV-Team17"
   },
   {
     "title": "IPL Insights: Data Integration and Analysis",
     "imageSrc": "projects/ipl_insights.jpg",
     "description": "A semantic ontology framework integrating IPL cricket data for performance analysis with efficient querying",
-    "skills": ["Flask", "React", "OWL", "SPARQL"],
+    "skills": ["React", "Flask", "OWL", "SPARQL"],
     "source": "https://github.com/mdeshp11/SER531-Group-7-Data-Integration-Project"
   },
   {
     "title": "Forbidden Vaults: Single-Player Puzzle Game",
     "imageSrc": "projects/forbidden_vaults.jpg",
-    "description": "A Unity-based puzzle game featuring procedurally generated dungeons, intricate buff-debuff systems, and dynamic gameplay mechanics",
+    "description": "A Unity-based puzzle game featuring procedurally generated dungeons, intricate systems, and dynamic gameplay mechanics",
     "skills": ["Unity", "C#"],
     "source": "https://github.com/Kushagra1480/SER594_ForbiddenVaults"
   }
