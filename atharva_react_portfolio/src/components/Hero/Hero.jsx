@@ -7,9 +7,9 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I am Atharva</h1>
+        <h1 className={styles.title}>Hi, I am Atharva Date</h1>
         <p className={styles.description}>I am a full stack developer with 4 years of experience 
-          using frameworks such as React, Vue, Laravel and NodeJS. 
+          using frameworks such as React, Vue, Laravel and NodeJS. <br></br><br></br>
           Reach out if you'd like to learn more!
         </p>
         <a href="mailto:dateatharva@gmail.com" className={styles.contactBtn}>

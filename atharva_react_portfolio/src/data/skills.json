@@ -46,5 +46,17 @@
   {
     "title": "Docker",
     "imageSrc": "skills/docker.png"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/aws.png"
+  },
+  {
+    "title": "GCP",
+    "imageSrc": "skills/gcp.png"
+  },
+  {
+    "title": "Redis",
+    "imageSrc": "skills/redis.png"
   }
 ]

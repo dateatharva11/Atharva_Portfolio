@@ -1,9 +1,16 @@
 [
   {
+    "role": "Software Engineer Intern",
+    "organisation": "Auto BIM Route AI",
+    "startDate": "Jan, 2025",
+    "endDate": "May, 2025",
+    "imageSrc": "history/autobimroute.jpg"
+  },
+  {
     "role": "Graduate Services Assistant",
     "organisation": "Arizona State University",
     "startDate": "Aug, 2024",
-    "endDate": "Present",
+    "endDate": "May, 2025",
     "imageSrc": "history/ASU.png"
   },
   {
@@ -19,5 +26,12 @@
     "startDate": "Nov, 2019",
     "endDate": "Apr, 2020",
     "imageSrc": "history/VES.png"
+  },
+  {
+    "role": "Senior Operations Officer",
+    "organisation": "Computer Society of India - VESIT",
+    "startDate": "Aug, 2019",
+    "endDate": "Oct, 2020",
+    "imageSrc": "history/csi.jpg"
   }
 ]
