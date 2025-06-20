@@ -59,3 +59,7 @@
   background: var(--color-primary);
   padding: 1px 22px;
 }
+
+.link:hover {
+  background-color: #4458a6;
+}
