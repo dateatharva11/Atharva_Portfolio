@@ -1,6 +1,13 @@
 [
   {
-    "role": "Software Engineer Intern",
+    "role": "Software Intern",
+    "organisation": "Pervaziv AI",
+    "startDate": "Jun, 2025",
+    "endDate": "Present",
+    "imageSrc": "history/pervaziv.jpeg"
+  },
+  {
+    "role": "Software Engineer Intern - Capstone Project",
     "organisation": "Auto BIM Route AI",
     "startDate": "Jan, 2025",
     "endDate": "May, 2025",

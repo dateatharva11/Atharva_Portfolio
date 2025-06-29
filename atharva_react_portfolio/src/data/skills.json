@@ -16,12 +16,20 @@
     "imageSrc": "skills/react.png"
   },
   {
+    "title": "Next",
+    "imageSrc": "skills/next.png"
+  },
+  {
     "title": "Vue",
     "imageSrc": "skills/vue.png"
   },
   {
     "title": "Node",
     "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Express",
+    "imageSrc": "skills/express.png"
   },
   {
     "title": "GraphQL",
@@ -34,6 +42,14 @@
   {
     "title": "MySQL",
     "imageSrc": "skills/mysql.png"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgresql.png"
+  },
+  {
+    "title": "Redis",
+    "imageSrc": "skills/redis.png"
   },
   {
     "title": "SpringBoot",
@@ -56,7 +72,15 @@
     "imageSrc": "skills/gcp.png"
   },
   {
-    "title": "Redis",
-    "imageSrc": "skills/redis.png"
+    "title": "Flask",
+    "imageSrc": "skills/flask.png"
+  },
+  {
+    "title": "Jira",
+    "imageSrc": "skills/jira.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/git.png"
   }
 ]

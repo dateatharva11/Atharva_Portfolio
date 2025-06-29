@@ -119,3 +119,18 @@
     gap: 9px;
   }
 }
+
+.role {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text); 
+}
+
+.organisation {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-accent); 
+  margin-top: -4px;
+}
