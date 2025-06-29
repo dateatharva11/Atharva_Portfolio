@@ -23,7 +23,7 @@ export const Hero = () => {
           </span>
         </h1>
         <p className={styles.description}>I am a full stack developer with 3 years of professional 
-          experience using frameworks such as React, Vue, Laravel and NodeJS. <br></br><br></br>
+          experience using technologies such as Python, Java, React, MongoDB and NodeJS. <br></br><br></br>
           Reach out if you would like to learn more!
         </p>
         <a href="mailto:dateatharva@gmail.com" className={styles.contactBtn}>

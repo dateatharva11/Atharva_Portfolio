@@ -2,6 +2,7 @@
   {
     "role": "Software Intern",
     "organisation": "Pervaziv AI",
+    "location": "Sunnyvale, CA, USA",
     "startDate": "Jun, 2025",
     "endDate": "Present",
     "imageSrc": "history/pervaziv.jpeg"
@@ -9,6 +10,7 @@
   {
     "role": "Software Engineer Intern - Capstone Project",
     "organisation": "Auto BIM Route AI",
+    "location": "Tempe, AZ, USA",
     "startDate": "Jan, 2025",
     "endDate": "May, 2025",
     "imageSrc": "history/autobimroute.jpg"
@@ -16,6 +18,7 @@
   {
     "role": "Graduate Services Assistant",
     "organisation": "Arizona State University",
+    "location": "Tempe, AZ, USA",
     "startDate": "Aug, 2024",
     "endDate": "May, 2025",
     "imageSrc": "history/ASU.png"
@@ -23,6 +26,7 @@
   {
     "role": "Consultant - Package Implementation",
     "organisation": "LTIMindtree",
+    "location": "Mumbai, MH, India",
     "startDate": "Jun, 2021",
     "endDate": "Jul, 2023",
     "imageSrc": "history/ltimindtree.png"
@@ -30,6 +34,7 @@
   {
     "role": "Software Development Engineer Intern",
     "organisation": "VESIT Renaissance Cell",
+    "location": "Mumbai, MH, India",
     "startDate": "Nov, 2019",
     "endDate": "Apr, 2020",
     "imageSrc": "history/VES.png"
@@ -37,6 +42,7 @@
   {
     "role": "Senior Operations Officer",
     "organisation": "Computer Society of India - VESIT",
+    "location": "Mumbai, MH, India",
     "startDate": "Aug, 2019",
     "endDate": "Oct, 2020",
     "imageSrc": "history/csi.jpg"

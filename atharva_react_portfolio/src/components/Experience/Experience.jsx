@@ -33,6 +33,7 @@ export const Experience = () => {
                 <div className={styles.historyItemDetails}>
                   <h3 className={styles.role}>{historyItem.role}</h3>
                   <h4 className={styles.organisation}>{historyItem.organisation}</h4>
+                  <h5 className={styles.location}>{historyItem.location}</h5>
                   <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
                 </div>
               </li>
