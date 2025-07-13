@@ -94,5 +94,17 @@
   {
     "title": "Git",
     "imageSrc": "skills/git.png"
+  },
+  {
+    "title": "JIRA",
+    "imageSrc": "skills/jira.png"
+  },
+  {
+    "title": "Linux",
+    "imageSrc": "skills/linux.png"
+  },
+  {
+    "title": "Bash",
+    "imageSrc": "skills/bash.png"
   }
 ]
