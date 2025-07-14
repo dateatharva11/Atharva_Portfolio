@@ -74,13 +74,3 @@ npm run dev
 * Integrate animation using Framer Motion
 * Improve SEO with meta tags and structured data
 * Deploy on platforms like Vercel or Netlify
-
----
-
-## 🧾 License
-
-This project is open source and free to use. Feel free to fork and customize it to build your own portfolio!
-
----
-
-Let me know if you'd like to add deployment instructions (e.g., Vercel), project screenshots, or a link to the live site!
