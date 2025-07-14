@@ -1,7 +1,3 @@
-Here’s an enhanced and professional version of your portfolio README:
-
----
-
 # 🧑‍💻 Atharva's React Portfolio
 
 Welcome to my personal portfolio website built using **React** and **Vite**. This project showcases my technical projects, skills, and professional journey as a software engineer.
