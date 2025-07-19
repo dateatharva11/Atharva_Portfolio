@@ -1,22 +1,76 @@
-# Atharva_Portfolio
-My React Portfolio website
+# 🧑‍💻 Atharva's React Portfolio
 
-Project Initialization =>
+Welcome to my personal portfolio website built using **React** and **Vite**. This project showcases my technical projects, skills, and professional journey as a software engineer.
 
-Create a react project with the command:
-- npm create vite@latest
-Choose react and javascript
+---
 
-Change directory to the project folder and install packages using:
-- npm install
+## 🚀 Project Initialization
 
-Install two fonts using: 
-- npm install @fontsource/roboto @fontsource/outfit
+To set up the project locally, follow these steps:
 
-Running the project on local machine=>
+### 1. Create the React Project
 
-Use the below command to run the React project:
-- npm run dev
-Ctrl + Click on the localhost link to open it on the browser
+```bash
+npm create vite@latest
+```
 
+* Choose the following options when prompted:
 
+  * **Framework:** React
+  * **Variant:** JavaScript
+
+### 2. Install Dependencies
+
+Navigate to the project directory and run:
+
+```bash
+npm install
+```
+
+### 3. Install Fonts
+
+This project uses custom fonts for a cleaner UI. Install them using:
+
+```bash
+npm install @fontsource/roboto @fontsource/outfit
+```
+
+---
+
+## 💻 Running the Project Locally
+
+Start the development server with:
+
+```bash
+npm run dev
+```
+
+* The server will start at a local address (usually [http://localhost:5173](http://localhost:5173)).
+* **Ctrl + Click** the URL shown in the terminal to open the app in your default browser.
+
+---
+
+## 🎨 Tech Stack
+
+* **Framework:** React
+* **Build Tool:** Vite
+* **Styling:** CSS Modules / Tailwind (based on your setup)
+* **Fonts:** Roboto, Outfit
+
+---
+
+## 📁 Features
+
+* Responsive layout for web and mobile
+* Projects section with descriptions and tech stacks
+* Contact section with links to GitHub, LinkedIn, and email
+* Clean, modern UI with custom fonts
+
+---
+
+## 📌 Future Enhancements
+
+* Add dark/light theme toggle
+* Integrate animation using Framer Motion
+* Improve SEO with meta tags and structured data
+* Deploy on platforms like Vercel or Netlify
