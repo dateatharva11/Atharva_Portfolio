@@ -73,4 +73,3 @@ npm run dev
 * Add dark/light theme toggle
 * Integrate animation using Framer Motion
 * Improve SEO with meta tags and structured data
-* Deploy on platforms like Vercel or Netlify
