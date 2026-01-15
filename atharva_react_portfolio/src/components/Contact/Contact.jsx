@@ -32,6 +32,12 @@ export const Contact = () => {
             github.com/dateatharva11
           </a>
         </li>
+        <li className={styles.link}>
+          <img src={getImageUrl("contact/leetcodeIcon.png")} alt="LeetCode icon" />
+          <a href="https://leetcode.com/u/adate1/">
+            leetcode.com/adate1
+          </a>
+        </li>
       </ul>
     </footer>
   );
