@@ -63,7 +63,7 @@ npm run dev
 
 * Responsive layout for web and mobile
 * Projects section with descriptions and tech stacks
-* Contact section with links to GitHub, LinkedIn, and email
+* Contact section with links to GitHub, LinkedIn, Email and LeetCode
 * Clean, modern UI with custom fonts
 
 ---
