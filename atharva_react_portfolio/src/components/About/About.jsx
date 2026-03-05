@@ -11,7 +11,7 @@ export const About = () => {
       <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
           <div className={styles.aboutItemText}>
-            <h3>🌐 Frontend D</h3>
+            <h3>🌐 Frontend Developer</h3>
             <p>
               I specialize in crafting visually appealing and highly optimized user interfaces, 
               ensuring a seamless user experience
