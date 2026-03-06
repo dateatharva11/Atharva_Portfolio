@@ -106,5 +106,9 @@
   {
     "title": "Bash",
     "imageSrc": "skills/bash.png"
+  },
+  {
+    "title": "LangChain",
+    "imageSrc": "skills/langchain.png"
   }
 ]
