@@ -22,8 +22,8 @@ export const Hero = () => {
             />
           </span>
         </h1>
-        <p className={styles.description}>I am a full stack developer with 3 years of professional 
-          experience using technologies such as Python, Java, React, MongoDB and NodeJS. <br></br><br></br>
+        <p className={styles.description}>I am a full stack developer who builds AI-driven applications and scalable web platforms. 
+          My experience ranges from developing intelligent developer tools at a startup to implementing enterprise solutions in a fast-paced consulting environment. <br></br><br></br>
           Reach out if you would like to learn more!
         </p>
         <a href="mailto:dateatharva@gmail.com" className={styles.contactBtn}>
