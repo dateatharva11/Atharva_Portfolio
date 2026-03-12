@@ -14,6 +14,13 @@
     "source": "https://github.com/dateatharva11/revvo"
   },
   {
+    "title": "IPL RAG Chatbot",
+    "imageSrc": "projects/iplgpt_rag.png",
+    "description": "A RAG based chatbot for recent Indian Premier League (IPL) cricket tournament data",
+    "skills": ["LangChain", "NextJS", "NodeJS", "TypeScript", "OpenAI"],
+    "source": "https://github.com/dateatharva11/IPL-RAG-Chatbot"
+  },
+  {
     "title": "BlockWheels: A Peer to Peer Ridesharing Network",
     "imageSrc": "projects/blockchain_project.jpg",
     "description": "A smartphone application for ride-sharing services using Blockchain Technology",
