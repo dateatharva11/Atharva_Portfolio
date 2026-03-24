@@ -1,10 +1,18 @@
 [
   {
+    "role": "Full Stack Engineer",
+    "organisation": "InnoActive Group",
+    "location": "San Francisco, CA, USA",
+    "startDate": "Feb, 2026",
+    "endDate": "Present",
+    "imageSrc": "history/innoactive.jpeg"
+  },
+  {
     "role": "Software Engineer",
     "organisation": "Pervaziv AI",
     "location": "Sunnyvale, CA, USA",
     "startDate": "Jun, 2025",
-    "endDate": "Present",
+    "endDate": "Feb, 2026",
     "imageSrc": "history/pervaziv.jpeg"
   },
   {
