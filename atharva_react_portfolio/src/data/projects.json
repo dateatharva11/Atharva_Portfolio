@@ -58,7 +58,7 @@
   {
     "title": "NAAV Programming Language",
     "imageSrc": "projects/naav_project.jpg",
-    "description": "A user-friendly language called NAAV with interpreter made of tokenizer, parser and evaluator",
+    "description": "A user-friendly programming language called NAAV with interpreter made of tokenizer, parser and evaluator",
     "skills": ["SWI Prolog", "Python", "PySwip", "GitHub"],
     "source": "https://github.com/atharva-date/SER502-NAAV-Team17"
   }
