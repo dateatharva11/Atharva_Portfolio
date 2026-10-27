@@ -22,7 +22,7 @@ export const About = () => {
           <div className={styles.aboutItemText}>
             <h3>⚙️ Backend Developer</h3>
             <p>
-              I focus on designing high-performance backend APIs, 
+              I focus on designing and optimizing high-performance backend APIs, 
               ensuring fast data processing and seamless integration with frontend systems
             </p>
           </div>
