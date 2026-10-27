@@ -13,7 +13,7 @@ export const About = () => {
           <div className={styles.aboutItemText}>
             <h3>🌐 Frontend Developer</h3>
             <p>
-              I specialize in crafting visually appealing and highly optimized user interfaces, 
+              I specialize in creating visually appealing and highly optimized user interfaces, 
               ensuring a seamless user experience
             </p>
           </div>
