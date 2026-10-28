@@ -31,7 +31,7 @@ export const About = () => {
           <div className={styles.aboutItemText}>
             <h3>💻 + 💾 Full Stack Developer</h3>
             <p>
-              I develop end-to-end solutions, managing both frontend and backend technologies 
+              I develop end-to-end solutions, managing both frontend and backend aspects of code 
               to deliver complete and optimized applications            
             </p>
           </div>
