@@ -6,7 +6,7 @@ import { getImageUrl } from "../../utils";
 export const About = () => {
   return (
     <section className={styles.container} id="about">
-      {/* About Section */}
+      {/* About */}
       <h2 className={styles.title}>About</h2>
       <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
@@ -38,7 +38,7 @@ export const About = () => {
         </li>
       </ul>
       <br></br><br></br><br></br>
-      {/* Achievements Section */}
+      {/* Achievements */}
       <h2 className={styles.title}>Achievements</h2>
       <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
