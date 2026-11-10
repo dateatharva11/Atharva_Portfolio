@@ -1,0 +1,46 @@
+/* Design tokens: a night transit map (default) and a daytime signage theme. */
+
+:root,
+:root[data-theme="dark"] {
+  --bg: #0A1020;
+  --surface: #111A2D;
+  --surface-2: #17223A;
+  --ink: #E7ECF5;
+  --slate: #8E9BB3;
+  --rule: #22304A;
+  --track: #1C2942;
+  --route: #4D7CFF;
+  --glow: rgba(77, 124, 255, 0.55);
+  --signal: #FFC93C;
+  --signal-glow: rgba(255, 201, 60, 0.5);
+  --signal-ink: #16202E;
+  --tile: #E9EEF5;
+  --nav-bg: rgba(10, 16, 32, 0.78);
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #E9ECEF;
+  --surface: #F6F8FA;
+  --surface-2: #FFFFFF;
+  --ink: #16202E;
+  --slate: #556172;
+  --rule: #C9CFD6;
+  --track: #D3D9E0;
+  --route: #1F4FD1;
+  --glow: rgba(31, 79, 209, 0.25);
+  --signal: #FFC93C;
+  --signal-glow: rgba(255, 201, 60, 0.35);
+  --signal-ink: #16202E;
+  --tile: #FFFFFF;
+  --nav-bg: rgba(233, 236, 239, 0.85);
+  color-scheme: light;
+}
+
+:root {
+  --font: "Overpass", system-ui, sans-serif;
+  --gutter: clamp(16px, 5vw, 64px);
+  --max: 1120px;
+  --nav-h: 64px;
+  --radius: 8px;
+}
