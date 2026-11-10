@@ -1,82 +1,144 @@
-@import "../../vars.css";
-
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--nav-h);
+  gap: 16px;
+}
+
+.brand {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 61px;
-  z-index: 2;
-  margin: 0 10%;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 600;
+  gap: 10px;
+  font-weight: 800;
   text-decoration: none;
-  color: var(--color-text);
+  letter-spacing: -0.01em;
 }
 
+.brand::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 10px var(--signal-glow);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2vw, 20px);
+}
+
+.menu {
+  display: flex;
+  gap: clamp(4px, 1.5vw, 12px);
+  list-style: none;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  padding: 8px 10px 6px;
+  border-radius: 4px;
+  color: var(--slate);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu a:hover,
+.menu a[aria-current="true"] {
+  color: var(--ink);
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--route);
+  box-shadow: 0 0 10px var(--glow);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu a[aria-current="true"]::after {
+  transform: scaleX(1);
+}
+
+.iconBtn {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.iconBtn:hover {
+  border-color: var(--route);
+  box-shadow: 0 0 12px var(--glow);
+}
+
+.iconBtn svg {
+  width: 20px;
+  height: 20px;
+}
 
 .menuBtn {
   display: none;
 }
 
-.menu {
-  display: flex;
-}
-
-.menuItems {
-  display: flex;
-  gap: 47px;
-  list-style: none;
-}
-
-.menuItems a {
-  font-size: 25px;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-@media screen and (max-width: 830px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 720px) {
+  .menuBtn {
+    display: grid;
   }
 
   .menu {
     position: absolute;
+    top: var(--nav-h);
+    left: 0;
     right: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
-  }
-
-  .menuBtn {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menuItems {
     display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 13px;
-    border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    gap: 0;
+    padding: 8px var(--gutter) 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
   }
 
   .menuOpen {
     display: flex;
-    z-index: 1;
+  }
+
+  .menu a {
+    padding: 14px 4px 12px;
+    font-size: 1.05rem;
+  }
+
+  .menu a::after {
+    left: 4px;
+    right: auto;
+    width: 32px;
   }
 }
