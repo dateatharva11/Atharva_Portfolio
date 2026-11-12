@@ -1,114 +1,104 @@
-@import '../../vars.css';
-
-.container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 49px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+.hero {
+  padding: clamp(56px, 9vw, 112px) 0 clamp(64px, 9vw, 104px);
 }
 
-.content {
+.top {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  color: var(--color-text);
-  width: 65%;
-  z-index: 1;
+  gap: 24px;
+}
+
+.hello {
+  margin-bottom: 6px;
+  color: var(--slate);
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
 }
 
 .title {
-  font-size: 64px;
-  font-weight: 900;
-  margin-bottom: 33px;
-  font-family: var(--font-roboto);
-  background: linear-gradient(
-    90deg, 
-    rgba(255, 255, 255, 1) 70%, 
-    rgba(255, 255, 255, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  font-weight: 800;
+  font-size: clamp(3.2rem, 11vw, 8.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.caret {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.8em;
+  margin-left: 0.04em;
+  vertical-align: -0.02em;
+  background: var(--signal);
+  box-shadow: 0 0 14px var(--signal-glow);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.avatar {
+  width: clamp(160px, 22vw, 256px);
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 3px solid var(--route);
+  box-shadow: 0 0 0 6px var(--bg), 0 0 0 7px var(--rule), 0 0 28px var(--glow);
 }
 
 .description {
-  font-size: 30px;
-  font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  max-width: 62ch;
+  margin-top: 28px;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.description + .description {
+  margin-top: 12px;
+}
+
+.muted {
+  color: var(--slate);
 }
 
 .contactBtn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 28px;
+  padding: 14px 24px 12px;
+  border-radius: 999px;
+  background: var(--route);
+  color: #fff;
+  font-weight: 800;
   text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 100px;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 24px var(--glow);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .contactBtn:hover {
-  background-color: #4458a6;
+  transform: translateY(-2px);
+  box-shadow: 0 0 36px var(--glow);
 }
 
-.heroImg {
-  width: 300px;
-  z-index: 1;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, -0px);
+@media (prefers-reduced-motion: reduce) {
+  .caret {
+    animation: none;
   }
 }
 
-.topBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-@media screen and (max-width: 830px) {
-  .container {
+@media (max-width: 600px) {
+  .top {
     flex-direction: column-reverse;
-  }  
-  .content {
-    align-items: center;
+    gap: 28px;
+  }
+
+  .avatar {
+    width: 160px;
   }
 }
