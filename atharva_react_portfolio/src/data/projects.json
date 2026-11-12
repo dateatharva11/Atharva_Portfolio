@@ -11,7 +11,8 @@
     "imageSrc": "projects/revvo_project.png",
     "description": "Revvo is your smart shopping friend, transforming the way you navigate malls",
     "skills": ["React Native", "Appwrite", "Google Cloud", "Tailwind CSS"],
-    "source": "https://github.com/dateatharva11/revvo"
+    "source": "https://github.com/dateatharva11/revvo",
+    "award": "Most Innovative Project, WICS Hackathon 2025"
   },
   {
     "title": "IPL RAG Chatbot",

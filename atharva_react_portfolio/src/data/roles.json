@@ -1,0 +1,26 @@
+[
+  {
+    "title": "AI Engineer",
+    "description": "I build AI-powered features with LLMs, RAG pipelines and agents, turning models into reliable tools that solve real user problems"
+  },
+  {
+    "title": "Full Stack Developer",
+    "description": "I develop end-to-end solutions, managing both frontend and backend aspects of code to deliver complete, optimized and scalable applications"
+  },
+  {
+    "title": "Product Manager",
+    "description": "I translate user needs into clear product roadmaps, prioritizing features and aligning teams to ship products that deliver real value"
+  },
+  {
+    "title": "Frontend Developer",
+    "description": "I specialize in creating visually appealing and highly optimized user interfaces, ensuring a seamless user experience"
+  },
+  {
+    "title": "Backend Developer",
+    "description": "I focus on designing and optimizing high-performance backend APIs, ensuring fast data processing and seamless integration with frontend systems"
+  },
+  {
+    "title": "Mobile Developer",
+    "description": "I build cross-platform mobile apps with React Native and Expo, delivering smooth, real-time experiences on both iOS and Android"
+  }
+]
