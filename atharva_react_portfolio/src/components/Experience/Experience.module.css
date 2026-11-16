@@ -1,143 +1,144 @@
-@import "../../vars.css";
-
-.container {
-  color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+.line {
+  --progress: 1;
+  position: relative;
+  list-style: none;
 }
 
-.title {
-  color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-  padding-bottom: 20px;
+/* The unlit track and the glowing route drawn over it */
+.line::before,
+.line::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  width: 8px;
+  border-radius: 4px;
 }
 
-.content {
+.line::before {
+  bottom: 24px;
+  background: var(--track);
+}
+
+.line::after {
+  height: calc((100% - 48px) * var(--progress));
+  background: var(--route);
+  box-shadow: 0 0 18px var(--glow);
+}
+
+.station {
+  position: relative;
+  padding: 0 0 40px 56px;
+}
+
+.station:last-child {
+  padding-bottom: 0;
+}
+
+.station::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 6px solid var(--track);
+  transition: border-color 0.4s, box-shadow 0.4s, background 0.4s;
+}
+
+.lit::before {
+  border-color: var(--route);
+  box-shadow: 0 0 16px var(--glow);
+}
+
+/* "You are here": the current company */
+.current.lit::before {
+  background: var(--signal);
+  border-color: var(--ink);
+  box-shadow: 0 0 22px var(--signal-glow);
+}
+
+.company {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
-}
-
-.skills {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 11px;
+  gap: 16px;
 }
 
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-}
-
-.skillImageContainer img {
-  width: 75px;
-}
-
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
-}
-
-.history {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.historyItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #3764b7 0%, rgba(25, 55, 109, 0) 100%);
+.company img {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  object-fit: contain;
   border-radius: 10px;
-  padding: 24px;
+  background: #fff;
 }
 
-.historyItem img {
-  width: 50px;
-}
-
-.historyItemDetails {
-  font-family: var(--font-roboto);
-}
-
-.historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.historyItemDetails p {
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.historyItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
-  font-size: 25px;
-  list-style-type: disc;
-  margin-left: 17px;
-}
-
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
-  }
-
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .history {
-    width: 100%;
-    gap: 9px;
-  }
-}
-
-.role {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--color-text); 
-}
-
-.organisation {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--color-accent); 
-  margin-top: -4px;
+.company h3 {
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .location {
-  font-size: 24px;
-  font-weight: 100;
-  color: var(--color-text); 
-  padding-bottom: 5%;
+  color: var(--slate);
+  font-size: 0.98rem;
+}
+
+.roles {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.role {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 16px 20px 14px;
+}
+
+.role:hover {
+  border-color: var(--route);
+}
+
+.roleTitle {
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.dates {
+  color: var(--slate);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .role {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .dates {
+    text-align: left;
+  }
+
+  .company img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .station {
+    padding-left: 48px;
+  }
 }
