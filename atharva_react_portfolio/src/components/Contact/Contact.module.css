@@ -1,61 +1,54 @@
-@import "../../vars.css";
-
 .container {
-  color: var(--color-text);
-  margin-top: 120px;
-  background-color: var(--color-secondary);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 100px;
+  padding: clamp(72px, 10vw, 120px) 0 56px;
+  background: var(--route);
+  color: #fff;
 }
 
-.text h2 {
-  font-size: 60px;
-  font-weight: 700;
-  letter-spacing: 4px;
+.title {
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
-.text p {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 2px;
+.text {
+  margin-top: 12px;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  opacity: 0.92;
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 14px;
+  margin-top: 40px;
   list-style: none;
-  gap: 26px;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
-}
-
-.link a {
-  color: var(--color-text);
+  gap: 14px;
+  padding: 14px 16px 12px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-weight: 600;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  overflow-wrap: anywhere;
+  transition: background 0.2s;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    flex-direction: column;
-    gap: 23px;
-  }
+.link:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.link:focus-visible {
+  outline-color: #fff;
+}
 
+.link img {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
 }
