@@ -1,21 +1,43 @@
-.scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
 .scrollButton {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.92rem;
   cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 18px var(--glow);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
 }
 
-.scrollButton:hover {
-  background-color: #0056b3;
+.visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.scrollButton svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 600px) {
+  .scrollButton {
+    padding: 12px;
+  }
+
+  .scrollButton span {
+    display: none;
+  }
 }
