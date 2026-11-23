@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
@@ -12,6 +12,9 @@ const prefersReducedMotion = () =>
 export const Hero = () => {
   // Every character is rendered from the start and fades in, so the layout never shifts while typing.
   const [typed, setTyped] = useState(() => (prefersReducedMotion() ? TOTAL_CHARS : 0));
+  const charRefs = useRef([]);
+  const caretRef = useRef(null);
+  const lastTop = useRef(null);
 
   useEffect(() => {
     if (typed >= TOTAL_CHARS) return;
@@ -19,6 +22,41 @@ export const Hero = () => {
     return () => clearTimeout(timer);
   }, [typed]);
 
+  // The caret is a single element after the name, moved to sit right after the last typed letter.
+  // Nothing is inserted between the letters, so their spacing never changes.
+  const placeCaret = useCallback(() => {
+    const caret = caretRef.current;
+    const chars = charRefs.current;
+    if (!caret || !chars[0]) return;
+    const anchor = typed === 0 ? chars[0] : chars[typed - 1];
+    const x = typed === 0 ? anchor.offsetLeft : anchor.offsetLeft + anchor.offsetWidth;
+    const y = anchor.offsetTop;
+    const newLine = lastTop.current !== null && lastTop.current !== y;
+    lastTop.current = y;
+
+    // Glide along a line, but jump straight down when typing wraps to the next line.
+    if (newLine) caret.style.transition = "none";
+    caret.style.setProperty("--x", `${x}px`);
+    caret.style.setProperty("--y", `${y}px`);
+    if (newLine) {
+      void caret.offsetWidth; // apply the jump before turning the glide back on
+      caret.style.transition = "";
+    }
+  }, [typed]);
+
+  useLayoutEffect(placeCaret, [placeCaret]);
+
+  // Re-measure on resize and once the web font loads, since letter widths change with both.
+  const placeCaretRef = useRef(placeCaret);
+  placeCaretRef.current = placeCaret;
+  useEffect(() => {
+    const remeasure = () => placeCaretRef.current();
+    window.addEventListener("resize", remeasure);
+    document.fonts?.ready.then(remeasure);
+    return () => window.removeEventListener("resize", remeasure);
+  }, []);
+
+  const done = typed >= TOTAL_CHARS;
   let index = 0;
 
   return (
@@ -32,16 +70,25 @@ export const Hero = () => {
                 <React.Fragment key={line}>
                   {lineIndex > 0 && <br />}
                   {[...line].map((char) => {
-                    const visible = index++ < typed;
+                    const position = index++;
                     return (
-                      <span key={index} aria-hidden="true" className={visible ? undefined : styles.hidden}>
+                      <span
+                        key={position}
+                        ref={(el) => (charRefs.current[position] = el)}
+                        aria-hidden="true"
+                        className={`${styles.char} ${position < typed ? "" : styles.hidden}`}
+                      >
                         {char}
                       </span>
                     );
                   })}
                 </React.Fragment>
               ))}
-              <span className={styles.caret} aria-hidden="true" />
+              <span
+                ref={caretRef}
+                aria-hidden="true"
+                className={`${styles.caret} ${done ? styles.caretBlink : ""}`}
+              />
             </h1>
           </div>
           <img

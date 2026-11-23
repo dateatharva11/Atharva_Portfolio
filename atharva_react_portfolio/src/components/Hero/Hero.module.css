@@ -17,24 +17,38 @@
 }
 
 .title {
+  position: relative;
   font-weight: 800;
   font-size: clamp(3.2rem, 11vw, 8.5rem);
   line-height: 0.92;
   letter-spacing: -0.045em;
 }
 
+/* Letters are laid out from the start and fade in, so the name never reflows while typing */
+.char {
+  transition: opacity 0.12s ease-out;
+}
+
 .hidden {
   opacity: 0;
 }
 
+/* One caret for the whole name, positioned by Hero.jsx after the last typed letter */
 .caret {
-  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 0.08em;
   height: 0.8em;
-  margin-left: 0.04em;
-  vertical-align: -0.02em;
+  border-radius: 0.02em;
   background: var(--signal);
   box-shadow: 0 0 14px var(--signal-glow);
+  transform: translate(calc(var(--x, 0px) + 0.03em), calc(var(--y, 0px) + 0.12em));
+  transition: transform 0.09s ease-out;
+}
+
+/* Solid while typing, blinks once the name is complete */
+.caretBlink {
   animation: blink 1s steps(1) infinite;
 }
 
@@ -87,7 +101,12 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .char,
   .caret {
+    transition: none;
+  }
+
+  .caretBlink {
     animation: none;
   }
 }
